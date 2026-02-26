@@ -1,0 +1,2 @@
+App1.jsx - Used to show basic function syntax + props + state in react
+App2.jsx - Usage of map
