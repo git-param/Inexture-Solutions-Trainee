@@ -1,0 +1,32 @@
+<!-- Problem 1: Button Click Counter
+Create a web page that contains:
+
+A button
+A text area to display click count
+Your task is to:
+
+Increase the count every time the button is clicked
+Update the text dynamically using DOM manipulation
+Handle user interaction using event listeners -->
+
+<html>
+    <head>
+        <title>Counter</title>
+    </head>
+    <body style="display: flex; flex-direction: column; align-items: center;">
+        <h1 id="countdisplay">0</h1>
+        <br><br>
+        <button id="btn">+</button>
+        <h2>Press this button to increment the count</h2>
+
+        <script>
+            let count=0;
+            const btn=document.getElementById('btn');
+            const countval=document.getElementById('countdisplay');
+            btn.addEventListener('click',()=>{
+                count++;
+                countval.innerHTML=count;
+            })
+        </script>
+    </body>
+</html>

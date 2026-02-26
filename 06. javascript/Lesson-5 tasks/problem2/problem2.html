@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Fetch Data</title>
+    </head>
+    <body>
+        <h2 id="status">Loading...</h2>
+        <div id="users"></div>
+        <script>
+            setTimeout(()=>
+            {
+                fetch("https://jsonplaceholder.typicode.com/users")
+                .then(res=>
+                    {
+                        let text="status: "+res.status+"<br>ok: "+res.ok;
+                        document.getElementById('status').innerHTML=text;
+                        // document.write("status: "+res.status); 
+                        // document.write("<br>ok: "+res.ok);
+                        return res.json()
+                    }
+                )
+                .then(data=>
+                    {
+                        // document.getElementById("status").innerText="";
+                        data.forEach(user => {
+                            let div = document.createElement("div")
+                            div.innerHTML = `
+                                <h3>Name: ${user.name}</h3>
+                                <h3>mail: ${user.email}</h3>
+                                <h3>City: ${user.address.city}</h3>
+                                <hr>
+                            `;
+                            document.getElementById("users").appendChild(div);
+                        });
+                    }
+                );
+            },3000);
+        </script>
+    </body>
+</html>
