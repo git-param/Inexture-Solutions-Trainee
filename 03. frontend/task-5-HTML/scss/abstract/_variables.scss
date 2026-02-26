@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+$small_heading_font: "Archivo", sans-serif;
+$font_family: "Inter", sans-serif;
+$min-font-size: clamp(0.06rem,4vw,0.875rem);
+$gradient-color-1: #02B9CA;
+$gradient-color-2: #0CC067;
+$button-padding: 0.75rem 1.25rem;
+$bg-color: #F3F7F6;
+$medium-font-size: clamp(0.06rem,4vw,1rem);

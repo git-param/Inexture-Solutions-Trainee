@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+:root
+{
+    --grad-color-1: #FF512F;
+    --grad-color-2: #DD2476;
+    --body-text-size: clamp(1rem,4vw,1.125);
+    --font: "Figtree", sans-serif;
+    --highlight-text-color: #FF512F; 
+    --common-body-text-color: #1D1D1D;
+}
+.header
+{
+    background-image: url(../assets/images/price-page/background-img1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header .navbar-brand,.header .navbar-brand span,.header .nav-link, .header-title
+{
+    color: #FFFF;
+}
+
+.logo
+{
+    font-family: var(--font);
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar .nav-link.active,.navbar .nav-link:hover,.highlight-text
+{
+    color: var(--highlight-text-color);
+    /* font-size: large; */
+}
+.btn.btn-login
+{
+    padding: 15px 30px;
+    border-radius: 10px;
+    background: linear-gradient(to right,var(--grad-color-1),var(--grad-color-2));
+    color: #fff;
+    border: none;
+    font-family: var(--font);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: var(--body-text-size);
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.btn.btn-signup 
+{
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 1px solid var(--grad-color-1);
+
+    background: linear-gradient(to right,var(--grad-color-1),var(--grad-color-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: var(--body-text-size);
+}
+.btn.btn-signup:hover 
+{
+    background: linear-gradient(to right,var(--grad-color-1),var(--grad-color-2));
+    /* -webkit-background-clip: unset; */
+    -webkit-text-fill-color: #fff;
+    border-color: transparent;
+}
+
+.header-title
+{
+    padding: 10.46rem 0;
+}
+.header-main-title
+{
+    font-family: var(--font);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: clamp(1rem,4vw,2.1875rem);
+    line-height: 130%;
+    letter-spacing: -1%;
+}
+.header-text
+{
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: var(--body-text-size);
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    max-width: 53.125rem;
+}
+
+/*now css for section1*/
+.section1
+{
+    padding-top: 7.5rem;
+    padding-bottom: 3.75rem;
+}
+.sec1-top
+{
+    gap: 1.25rem;
+    max-width: 53.125rem;
+    color: #1D1D1D;
+}
+.sec1-top-title
+{
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 2.1875rem;
+    line-height: 130%;
+    letter-spacing: 0%;
+}
+.sec1-top-text
+{
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: var(--body-text-size);
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.sec1-buttons
+{
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: var(--body-text-size);
+    line-height: 100%;
+    letter-spacing: 0px;
+    max-height: 3.125rem;
+    margin-top: 3.75rem;
+}
+.btn-monthly
+{
+    padding: 0.875rem 1.875rem;
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+    border: none;
+    color: #FFFF;
+    background: linear-gradient(to right,var(--grad-color-1),var(--grad-color-2));
+}
+.btn-yearly 
+{
+    padding: 15px 30px;
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    border: none;
+    color: #000000;
+    background-color: rgba(29, 29, 29, 0.08);
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: var(--body-text-size);
+}
+.btn-yearly:hover 
+{
+    background: linear-gradient(to right,var(--grad-color-1),var(--grad-color-2));
+    -webkit-text-fill-color: #fff;
+    border-color: transparent;
+}
+
+/* Section 2 */
+.section2 
+{
+    margin-top: 3.75rem;
+}
+.card 
+{
+    position: relative;
+    background-color: #F9FAF9;
+    border-radius: 1.5rem;
+    padding: 2.625rem;
+    height: 100%;
+    transition: 
+        transform 0.35s ease,
+        background-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.card:hover,#sec2-card2:hover 
+{
+    transform: translateY(-20px);
+    background-color: #fae5e043;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+.popular-tab 
+{
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.625rem;
+    font-size: 0.875rem;
+    color: #fff;
+    background: linear-gradient(
+        to right,
+        var(--grad-color-1),
+        var(--grad-color-2)
+    );
+    z-index: 2;
+}
+.card-content 
+{
+    padding-top: 4rem;
+}
+.sec2-top p 
+{
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: var(--body-text-size);
+    line-height: 20px;
+}
+
+.sec2-top h5 
+{
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 1.5625rem;
+    line-height: 100%;
+}
+.card-text span 
+{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 3.375rem;
+    line-height: 66px;
+}
+
+.sec2-pts 
+{
+    font-size: var(--body-text-size);
+}
+.get-started 
+{
+    padding: 0.9375rem 1.875rem;
+    border-radius: 10px;
+    background: linear-gradient(
+        to right,
+        var(--grad-color-1),
+        var(--grad-color-2)
+    );
+    color: #fff;
+    border: none;
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: var(--body-text-size);
+    max-width: 10.375rem;
+    align-self: center;
+}
+
+
+@media (max-width: 991px) 
+{
+    .card 
+    {
+        margin-bottom: 2rem;
+    }
+
+    .card:hover 
+    {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 576px) 
+{
+    .card 
+    {
+        padding: 2rem 1.5rem;
+    }
+
+    .card-text span 
+    {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+}
+
+
+/*now css for section3*/
+
+.section3 .container
+{
+    padding: 3.75rem 0;
+}
+.sec3-bottom-banner
+{
+    background-image: url(../assets/images/price-page/background-img2.svg);
+    border-radius: 1.875rem;
+    padding: 4.0625rem 3.125rem;
+}
+.sec3-bottom-banner p
+{
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: clamp(1rem,4vw,1.875rem);
+    line-height: 150%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin: 0;
+    max-width: 50.92rem;
+    color: #ffff;
+}
+.contact-button
+{
+    padding: 15px 40px;
+    border-radius: 10px;
+    background: linear-gradient(to right,var(--grad-color-1),var(--grad-color-2));
+    color: #fff;
+    border: none;
+    font-family: var(--font);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: var(--body-text-size);
+    line-height: 100%;
+    letter-spacing: 0%;
+    gap: 14px;
+    margin-right: 24px;
+    margin-top: 50px;
+}
+
+
+
+
+/*css for footer */
+.footer-navbar 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-nav-content 
+{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar-nav 
+{
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+}
+
+.footer-icons
+{
+    gap: 0.75rem;
+    font-size: 1.43rem;
+}
+.footer-icons i
+{
+    background-color: #f3c5c0;
+    padding: 0.8125rem 0.8125rem;
+    border-radius: 3.125rem;
+    max-width: 3.125rem;
+    max-width: 3.125rem;
+    color: #FF512F;
+}
+.footer-para 
+{
+    margin: 0;
+    font-size: var(--fs-base);
+    font-weight: var(--fw-medium);
+    color: var(--clr-heading);
+}
+.footer-ul 
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.footer-ul li 
+{
+    margin: 0;
+}
+.footer-ul a 
+{
+    text-decoration: none;
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-regular);
+    color: var(--clr-text);
+    transition: color 0.3s ease;
+}
+.footer-ul a:hover 
+{
+    color: var(--clr-primary-solid);
+}
+.footer-divider 
+{
+    max-width: 75rem;
+    height: 0;
+    margin: 0 auto 24px;
+    border-top: 2px solid transparent;
+    border-image: radial-gradient(50% 64979997.6% at 50% 50.7%,#FC4D34 0%,rgba(237, 57, 84, 0.05) 100%) 1;
+}
+@media (max-width: 768px) {
+
+    .footer-navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .footer-nav-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .footer-icons {
+        justify-content: center;
+    }
+
+    .footer-ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

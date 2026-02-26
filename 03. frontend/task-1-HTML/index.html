@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 1 - HTML</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        table, th, td {
+            border: 1px solid rgb(221, 208, 208);
+            border-collapse: collapse;
+        }
+    </style>    
+    <body>
+
+        <nav style="background-color: black; color: white; display: flex;">
+            <ul style="list-style-type: none;  
+                        display: flex; gap: 25px;
+                        margin-left: 15vw;
+                        align-items: center;">
+                <li style="font-weight: bold; font-size: 20px;;">WebSiteName</li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <p style="color: white; 
+                    background-image: url(img/img1.jpg);
+                    height: 20vh;
+                    background-size: cover; 
+                    display: block;
+                    background-repeat: no-repeat;
+                    text-align: center;
+                    align-content: center;
+                    font-size: large;
+                    font-weight: bold;">Banner</p>
+        <h1 style="color: brown;">heading 1</h1>
+        <h2 style="color: brown;">heading 2</h2>
+        <h3 style="color: brown;">heading 3</h3>
+        <h4 style="color: brown;">heading 4</h4>
+        <h5 style="color: brown;">heading 5</h5>
+        <h6 style="color: brown;">heading 6</h6>
+
+        <p>This <span style="color: red;">paragraph</span>
+            contains a lot of lines,
+            but the browser
+            ignores it.
+        </p>
+
+        <p>This   paragraph   contains a lot of spaces,   but the  browser   ignores  it.</p>
+
+        <p style="background-color: black;
+                color: white;
+                padding: 10px;
+                margin: 0px 15px 0px 15px;
+                /*box-shadow: -5px 0px gray;*/
+                border-left: 10px solid gray;">" Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Vitae enim tenetur consequatur explicabo quaerat corrupti 
+            officia tempora sapiente eveniet modi. "</p>
+
+        <div>
+            <img src="img/img2.jpg" alt="Image not found" 
+            style="width: 300px; 
+                height: 400px; 
+                margin-top: 10px;
+                background-size: cover;">
+            <img src="img/img2.jpg" alt="Image not found" 
+            style="width: 300px; 
+                height: 400px; 
+                margin-top: 10px;
+                background-size: cover;">
+            <img src="img/img2.jpg" alt="Image not found" 
+            style="width: 300px; 
+                height: 400px; 
+                margin-top: 10px;
+                background-size: cover;">
+        </div>
+
+        <table style="width: 100vw;
+                    margin-top: 30px;">
+            <tr style="background-color: rgb(229, 131, 57);
+                        color: white;
+                        height: 4vh;">
+                <th style="width: 10%; text-align: left;">#</th>
+                <th>Username</th>
+                <th>Email ID</th>
+                <th>Action</th>
+            </tr>
+            <tr style="height: 4vh;">
+                <td style="text-align: center;">1</td>
+                <td>Param</td>
+                <td>paramdholakia@gmail.com</td>
+                <td>Share</td>
+            </tr>
+            <tr style="background-color: rgb(218, 218, 218);
+                        height: 4vh;">
+                <td style="text-align: center;">2</td>
+                <td>Deep</td>
+                <td>deep@gmail.com</td>
+                <td>Edit</td>
+            </tr>
+            <tr style="height: 4vh;">
+                <td style="text-align: center;">3</td>
+                <td>Jeel</td>
+                <td>jeel@gmail.com</td>
+                <td>Delete</td>
+            </tr>
+            <tr style="background-color: rgb(218, 218, 218);
+                        height: 4vh;">
+                <td style="text-align: center;">4</td>
+                <td>Harsh</td>
+                <td>harsh@gmail.com</td>
+                <td>View</td>
+            </tr>
+            <tr style="text-align: center;
+                        height: 4vh;">
+                <td colspan="4" >Table Footer</td>
+            </tr>
+        </table>
+
+        <p style="font-size: x-large; margin-top: 40px; margin-bottom: 0px;">W3 School</p>
+        <a href="https://www.w3schools.com/" style="display: block;
+                background-color: rgb(45, 143, 45);
+                padding: 10px 15px 10px 20px;
+                width: fit-content;
+                color: white;
+                font-size: large;">Sign in</a>
+        <hr>
+        <i style="font-size: x-large;">Hello</i>
+
+        <p style="font-size: xx-large; 
+                    color: rgb(164, 70, 70);">UnOrdered List</p>
+
+        <ul type="square">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+
+        <p style="font-size: xx-large; 
+                    color: rgb(164, 70, 70);">Ordered List</p>
+
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ol>
+
+        <video controls style="border: 50px solid black;" height="250vh"><source src="video/vid1.mp4"></video>
+
+        <form data-testid="task1-form" style="background-color: rgb(229, 131, 57); padding: 20px;">
+            <div style="display: block;">
+                <label for="Username" style="color: white;">Username: </label> <br>
+                <input type="text" id="Username" name="Username" data-testid="task1-form-username" placeholder="Enter your username" style="box-sizing: border-box; width: 100%; padding: 5px; margin-top: 10px; margin-bottom: 10px;">
+
+                <label for="email" style="color: white;">Email: </label> <br>
+                <input type="email" id="email" name="email" data-testid="task1-form-email" placeholder="Enter your email address: " style="box-sizing: border-box; width: 100%; padding: 5px; margin-top: 10px; margin-bottom: 10px;">
+
+                <label for="password" style="color: white;">Password: </label> <br>
+                <input type="password" id="password" name="password" data-testid="task1-form-password" placeholder="Enter your password" style="box-sizing: border-box; width: 100%; padding: 5px; margin-top: 10px; margin-bottom: 10px;">
+
+                <label for="address" style="color: white;">Address: </label> <br>
+                <textarea name="address" id="address" data-testid="task1-form-address" placeholder="Enter your address" style="box-sizing: border-box; width: 100%; padding: 5px; margin-top: 10px; margin-bottom: 10px;"></textarea>
+
+                <label for="city" style="color: white; margin-top: 20px;">City: </label> <br>
+                <input type="text" name="city" id="city" data-testid="task1-form-city" placeholder="Enter your City" style="box-sizing: border-box; width: 100%; padding: 5px; margin-top: 10px; margin-bottom: 10px;" value="Ahmedabad">
+
+                <input type="submit" style="margin-top: 15px; height: 25px;">
+            </div>
+        </form>
+        <footer style="background-color: black; 
+                        width: 100vw;
+                        color: white;
+                        text-align: center;
+                        align-content: center;
+                        margin-top: 15px;
+                        height: 30px;">© 2022 Footer</footer>
+    </body>
+</html>

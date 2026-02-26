@@ -1,0 +1,17 @@
+@use "abstract" as *;
+
+.btn-signin
+{
+    padding: $button-padding;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.btn-signup, .btn-signin:hover
+{
+    @include button;
+}
+.nav-link.active, .nav-link:hover
+{
+    @include active-link-specs
+}
