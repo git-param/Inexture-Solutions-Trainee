@@ -1,21 +1,36 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Features from './components/Features'
-import CTA from './components/CTA'
-import Footer from './components/Footer'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import Features from "./components/Features/Features";
+import CTA from "./components/CTA/CTA";
+import Footer from "./components/Footer/Footer";
+import Login from "./pages/Login";
+
+function Home() {
+  return (
+    <>
+      <Hero />
+      <Features />
+      <CTA />
+      <Footer />
+    </>
+  );
+}
 
 function App() {
   return (
-    <div className="text-slate-900 font-display min-h-screen">
+    <BrowserRouter>
+
       <Navbar />
-      <main>
-        <Hero />
-        <Features />
-        <CTA />
-      </main>
-      <Footer />
-    </div>
-  )
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

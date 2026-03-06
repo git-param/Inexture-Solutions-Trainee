@@ -1,10 +1,5 @@
-/** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
-  darkMode: "class",
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
       colors: {
@@ -16,12 +11,6 @@ export default {
       },
       fontFamily: {
         display: ["Inter", "sans-serif"],
-      },
-      borderRadius: {
-        DEFAULT: "0.5rem",
-        lg: "0.75rem",
-        xl: "1.5rem",
-        full: "9999px",
       },
     },
   },
