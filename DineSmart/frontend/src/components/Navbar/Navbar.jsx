@@ -20,10 +20,10 @@ function Navbar()
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
-          <a href="#" className="hover:text-red-500 transition">Home</a>
-          <a href="#" className="hover:text-red-500 transition">Features</a>
-          <a href="#" className="hover:text-red-500 transition">AI</a>
-          <a href="#" className="hover:text-red-500 transition">Contact</a>
+          <Link to="/" className="hover:text-red-500 transition">Home</Link>
+          <a className="hover:text-red-500 transition">Features</a>
+          <Link to="/dashboard" className="hover:text-red-500 transition">AI</Link>
+          <a className="hover:text-red-500 transition">Contact</a>
           <Link to="/login" className="hover:text-red-500 transition">Login</Link>
         </div>
 

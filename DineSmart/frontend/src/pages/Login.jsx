@@ -57,9 +57,9 @@ function Login() {
         {/* Register */}
         <p className="text-gray-400 text-center text-sm mt-6">
           Don't have an account?{" "}
-          <span className="text-red-500 cursor-pointer">
+          <Link to="/register" className="text-red-500">
             Register
-          </span>
+          </Link>
         </p>
 
       </div>
