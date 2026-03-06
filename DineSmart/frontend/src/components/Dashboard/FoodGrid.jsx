@@ -5,19 +5,19 @@ const foods = [
     name: "Honey Pepperoni Pizza",
     price: 18.99,
     image:
-      "https://images.unsplash.com/photo-1601924582971-c5d5c9b2c2a6",
+      "https://images.unsplash.com/photo-1594007654729-407eedc4fe24?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Premium Omakase Box",
     price: 24.5,
     image:
-      "https://images.unsplash.com/photo-1562158070-57e9d6904f20",
+      "https://images.unsplash.com/photo-1563612116625-3012372fccce?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Signature Buddha Bowl",
     price: 16,
     image:
-      "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+      "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
   },
 ];
 

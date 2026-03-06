@@ -5,7 +5,7 @@ import FoodGrid from "../components/Dashboard/FoodGrid";
 
 function Dashboard() {
   return (
-    <div className="bg-black min-h-screen text-white flex">
+    <div className="bg-black min-h-screen text-white flex pt-16">
 
       <Sidebar />
 
