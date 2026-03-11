@@ -1,0 +1,11 @@
+.button
+{
+    background-color: rgb(86, 0, 0);
+    color: aliceblue;
+    font-size: large;
+    font-weight: bolder;
+}
+.button:hover
+{
+    background-color: rgb(200, 33, 33);
+}

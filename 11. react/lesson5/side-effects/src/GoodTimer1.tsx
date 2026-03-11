@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-
-const BadTimer: React.FC = () => {
+import './App.css';
+const GoodTimer: React.FC = () => {
   const [count, setCount] = useState<number>(0);
 
   useEffect(() => {
@@ -22,4 +22,4 @@ const BadTimer: React.FC = () => {
   return <div>Count in Timer: {count}</div>;
 };
 
-export default BadTimer;
+export default GoodTimer;
