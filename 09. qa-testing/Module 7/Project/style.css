@@ -1,0 +1,182 @@
+*
+{
+    margin:0;
+    padding:0
+}
+
+body
+{
+    min-height:100svh;
+    background-color:#ece9e6
+}
+
+.maindisplay
+{
+    min-height:100svh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:2rem;
+    padding:1.5rem
+}
+
+.heading
+{
+    text-align:center;
+    font-size:3rem;
+    font-weight:bolder;
+    padding:1.5rem
+}
+
+.addButton
+{
+    padding:1.5rem;
+    background-color:rgb(211,214,37);
+    font-weight:bold;
+    font-size:large;
+    color:#130606;
+    border-radius:20%
+}
+
+.addButton:hover
+{
+    background-color:#3737cb;
+    color:white
+}
+
+.button
+{
+    padding:0.9em 1.6em;
+    font-size:clamp(1rem,3vw,1.25rem);
+    border-radius:12px;
+    border:none;
+    background:rgb(194,10,10);
+    color:white;
+    cursor:pointer
+}
+
+.button:hover
+{
+    background-color:rgb(20,80,200);
+    transform:scale(1.05)
+}
+
+.bottom
+{
+    width:min(100%,75ch);
+    display:flex;
+    flex-direction:column;
+    gap:1.25rem
+}
+
+.document
+{
+    background:#f4f4f4;
+    border-radius:14px;
+    padding:1.25rem;
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+    font-size:2rem;
+    display:flex;
+    flex-direction:column;
+    gap:0.6rem
+}
+
+.document p
+{
+    color:#333;
+    line-height:1.4
+}
+
+.document p+p
+{
+    margin-top:0.4rem
+}
+
+.document input[type="text"]
+{
+    margin-top:0.4rem;
+    padding:0.4em 0.5em
+}
+
+.document input[type="checkbox"]
+{
+    transform:scale(2.5);
+    margin-left:0.4rem
+}
+
+.document button
+{
+    align-self:flex-end;
+    margin-top:0.5rem;
+    padding:0.45em 1.1em;
+    border-radius:6px;
+    font-size:1.6rem;
+    border:none;
+    background:#222;
+    color:white;
+    cursor:pointer
+}
+
+.document button:hover
+{
+    background:#444
+}
+
+.add-todo
+{
+    width:min(100%,75ch);
+    background:#f4f4f4;
+    border-radius:14px;
+    padding:1.25rem;
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    align-items:center
+}
+
+.add-todo input[type="text"],
+.add-todo input[type="number"]
+{
+    flex:1 1 200px;
+    padding:0.6em 0.7em;
+    font-size:1.2rem;
+    border-radius:8px;
+    border:1px solid #ccc;
+    outline:none
+}
+
+.add-todo input[type="checkbox"]
+{
+    transform:scale(1.8)
+}
+
+.add-todo button
+{
+    padding:0.5em 1.2em;
+    font-size:1.2rem;
+    border-radius:8px;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+    background:#222;
+    color:white
+}
+
+.add-todo button:hover
+{
+    background:#444
+}
+
+@media(max-width:600px)
+{
+    .add-todo
+    {
+        flex-direction:column;
+        align-items:stretch
+    }
+    .add-todo button
+    {
+        width:100%
+    }
+}
