@@ -31,3 +31,20 @@ def function1():
 # print(a)
 function1()
 # print("After function call: ",a)
+
+
+# Case 3:
+global_a=10
+def function1():
+    b=20
+    def function2():
+        c=30
+        def function3():
+            d=40
+            print(d)
+            print(c)
+            print(b)
+            print(global_a)
+        function3()
+    function2()
+function1()
