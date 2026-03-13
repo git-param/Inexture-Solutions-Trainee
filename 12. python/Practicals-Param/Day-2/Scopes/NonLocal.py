@@ -1,7 +1,7 @@
 a=100
 print(a)
 def function1():
-    global a
+    # global a
     a=200
     print(a)
     def function2():
