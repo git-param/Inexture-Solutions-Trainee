@@ -1,0 +1,22 @@
+useEffect is React’s mechanism for handling side effects in function components.
+
+A side effect is anything that:
+    - Interacts outside React
+    - Runs after render
+    - Is not pure calculation
+
+Examples:
+    API calls
+    Timers
+    Event listeners
+    Subscriptions
+    DOM manipulation
+    Logging
+
+useEffect(() => {
+  // effect logic
+});
+
+
+
+App1.jsx - useEffect with all 3 types (no array, empty array, full array)

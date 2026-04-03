@@ -1,0 +1,32 @@
+services:
+  database:
+    image: postgres:15
+    container_name: notes_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: notes
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    container_name: notes_backend
+    environment:
+      DB_HOST: database
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_NAME: notes
+    depends_on:
+      - database
+
+  frontend:
+    build: ./frontend
+    container_name: notes_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  db_data:

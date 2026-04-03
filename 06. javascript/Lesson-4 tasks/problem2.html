@@ -1,0 +1,43 @@
+<!-- Problem 2: Save and Display Username Using Local Storage
+Create a simple form with:
+
+An input field for username
+A save button
+Your task is to:
+
+Save the username in localStorage
+Retrieve and display the saved username when the page reloads
+Part of: Async JS, Promises, async/await, Mini Project -->
+
+<html>
+    <head>
+        <title>Local Storage Username</title>
+    </head>
+    <body>
+
+        <h1>Save Username</h1>
+        <form>
+            <input type="text" id="username" placeholder="Enter username">
+            <button id="save">Save</button>
+        </form>
+        <h2 id="display"></h2>
+
+        <script>
+            const input=document.getElementById("username")
+            const button=document.getElementById("save")
+            const display=document.getElementById("display")
+
+            const loadUser=()=>{
+                const savedUser=localStorage.getItem("username")
+                if (savedUser) 
+                    display.textContent=`Welcome, ${savedUser}`
+            }
+            button.addEventListener("click",()=>{
+                const value = input.value
+                if (value)
+                    localStorage.setItem("username", value)
+            })
+            loadUser()
+        </script>
+    </body>
+</html>

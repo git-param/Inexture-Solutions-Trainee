@@ -1,0 +1,6 @@
+App1.jsx - Mounting Phase
+App2.jsx - Updating Phase
+App3.jsx - shouldComponentExist = false
+App4.jsx - Unmounting Phase
+App5.jsx - Time interval problem (Timer1.jsx + Timer2.jsx)
+App6.jsx - Clock
